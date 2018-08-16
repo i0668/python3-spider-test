@@ -1,5 +1,5 @@
 
-MONGO_URL='150.109.66.58'
+MONGO_URL='localhost'
 MONGO_DB='jiepai'
 MONGO_TABLE='toutiao'
 
