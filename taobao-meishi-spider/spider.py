@@ -76,13 +76,17 @@ def save_to_mongo(result):
         print('存储到MongoDB失败', result)
 
 def main():
-    total = search()
-    total = int(re.compile('(\d+)').search(total).group(1))
-    # print(total)
-    for i in range(1, 10):
-        print('正在爬第%s页' % i)
-        next_page(i)
-    driver.quit()
+    try:
+        total = search()
+        total = int(re.compile('(\d+)').search(total).group(1))
+        # print(total)
+        for i in range(1, 10):
+            print('正在爬第%s页' % i)
+            next_page(i)
+    except Exception:
+        print('出错了。')
+    finally:
+        driver.quit()
 
 if __name__ == '__main__':
     main()
