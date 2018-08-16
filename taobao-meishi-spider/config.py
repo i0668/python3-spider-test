@@ -1,0 +1,6 @@
+
+MONGO_URL='127.0.0.1'
+MONGO_DB='taobao'
+MONGO_TABLE='shouji'
+KEYWORD='小米8'
+PAGES='9'
